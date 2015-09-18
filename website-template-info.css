@@ -1,0 +1,120 @@
+#jumbotron {
+  display: block;
+  width: 900px;
+  font-size: 14px;
+  padding: 48px 60px;
+}
+
+#container {
+  width: 1170px;
+  margin-top:50px;
+  /*margin-left: 89.5px;
+  margin-right: 89.5px;
+  line-height: 20px;
+  padding-left: 15px;
+  padding-right: 15px;*/
+
+}
+
+#marketing {
+  margin: 200px 100px;
+  width: 1170px;
+  height: 905px;
+  position: relative;
+}
+
+
+
+}
+
+#header {
+  margin: 20px 0px 10px 0px;
+  font-size: 36px;
+  font-weight:700;
+  font-height: 69px;
+  text-align: center;
+  padding: 5px;
+  color: #B22222;;
+}
+
+#header2{
+  font-size: 18px;
+  font-weight: 400;
+  color: #ffa328;
+}
+
+#header3{
+  font-size: 18px;
+  font-weight: 700;
+  color: #B22222;;
+  text-indent: 50px;
+}
+#header4{
+  font-size: 18px;
+  font-weight: 400;
+  color: #B22222;
+}
+
+.section {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  color: #B22222;
+}
+
+.row ,h2.title {
+  font-size: 24px;
+}
+
+h2.heading {
+  font-family:inherit;
+  font-weight:700;
+  font-size: 18px;
+  color: #ffa328;
+}
+
+strong {
+  color: #ffa328;
+}
+
+.form-horizontal {
+  color: #ffa328;
+}
+
+/*hr {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+}*/
+
+div.profilepic {
+  float:right;
+  padding: 30px;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 5px;
+}
+
+yus{
+  float:right
+}
+
+footer {
+  width: 1020px;
+  margin: 0px 89.5px 0px 89.5px;
+  clear: both;
+}

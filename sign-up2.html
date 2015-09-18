@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+  <!-- Reset CSS -->
+  <link href="reset.css" rel="stylesheet" />
+
+  <title>Sign Up</title>
+
+  <!-- Bootstrap core CSS -->
+  <!--<link href="../../dist/css/bootstrap.min.css" rel="stylesheet">-->
+  <link href="Info files/bootstrapv5.css" rel="stylesheet">
+
+  <!-- Link to CSS file for content -->
+  <link href="website-template.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="Info files/navbar-fixed-top_v2.css" rel="stylesheet">
+
+  <!-- Font Open Sans-->
+  <link rel="stylesheet" type='text/css' href='http://fonts.googleapis.com/css?family=Open+Sans:700,400,300'>
+
+  <!-- Link to CSS file for content -->
+  <link href="website-template.css" rel="stylesheet">
+
+  <!-- Link to jquery -->
+  <script src="js/jquery-1.11.3.js"></script>
+
+  <!-- Link to jquery validate (to validate forms) -->
+  <script src="js/jquery.validate.js"></script>
+
+  <!-- Link to additional jquery validate methods -->
+  <script src="js/additional-methods.js"></script>
+
+  <!-- Own JS for validation -->
+  <script src="js/validation2.js"></script>
+
+  <!-- Custom styles for this template -->
+  <link href="Info files/carousel_v2.css" rel="stylesheet">
+
+</head>
+
+<!-- NAVBAR
+================================================== -->
+	<body>
+       <div class="navbar-wrapper">
+      	 <div class="container">
+
+        <!-- Fixed navbar -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="index.html"><img src="Info files/introimages/logo.png" height="23px"></a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li><a href="dashboard2.html">Home</a></li>
+                <li><a href="about-us.html">About</a></li>
+                <li><a href="contact-us2.html">Contact</a></li>
+                <li><a href="helpdesk-faq.html">Helpdesk/FAQ</a></li>
+                </li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="log-in2.html">Login</a></li>
+                <li class="active"><a href="sign-up2.html">Sign-up <span class="sr-only">(current)</span></a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div>
+        </nav>
+
+      	</div>
+   	</div>
+
+
+<!-- Content -->
+
+    <div class="container marketing">
+		<div class="container">
+<body>
+      <div id=jumbotron>
+  	  <div id="header">
+      	<h1>Sign Up</h1>
+
+   		 <form class="form-horizontal" id="signupForm" action="database/signup2.php" method="POST">
+
+          <!-- First Name -->
+     	    <div class="form-group">
+       	     <label for="inputEmail3" class="col-sm-2 control-label"> First Name</label>
+      	      <div class="col-sm-10">
+                <input type="text" name="firstname" class="form-control" placeholder="First Name">
+              </div>
+          </div>
+
+          <!-- Last Name -->
+          <div class="form-group">
+              <label for="inputEmail3" class="col-sm-2 control-label">Last Name</label>
+                <div class="col-sm-10">
+                  <input type="text" name="lastname" class="form-control" placeholder="Last Name">
+                </div>
+          </div>
+
+          <!-- Gender -->
+          <p><label for="inputEmail3" class="col-sm-2 control-label">Gender</label>
+            <div class="form-group">
+      	       <div class="radio">
+		               <label class="radio-inline">
+  		                 <input type="radio" name="radiob1" id="inlineRadio1" value="Female"> Female
+		               </label>
+		               <label class="radio-inline">
+  		                  <input type="radio" name="radiob2" id="inlineRadio2" value="Male"> Male
+		               </label>
+		               <label class="radio-inline">
+  		                  <input type="radio" name="radiob3" id="inlineRadio3" value="Other"> Other
+		               </label></p>
+              </div>
+            </div>
+
+          <!-- Username -->
+          <div class="form-group">
+              <label for="inputEmail3" class="col-sm-2 control-label">Username</label>
+                <div class="col-sm-10">
+                  <input type="text" name="username" class="form-control" placeholder="Username">
+                </div>
+          </div>
+
+          <!-- Password -->
+          <div class="form-group">
+              <label for="inputPassword3" class="col-sm-2 control-label">Password (Min 5 characters)</label>
+                <div class="col-sm-10">
+                  <input type="password" name="password" class="form-control" id="inputPassword3" placeholder="Password">
+                </div>
+          </div>
+
+          <!-- Confirm Password -->
+          <div class="form-group">
+              <label for="inputPassword3" class="col-sm-2 control-label">Confirm Password (Min 5 characters)</label>
+                <div class="col-sm-10">
+                  <input type="password" name="confirmpassword" class="form-control"  placeholder="Confirm Password">
+                </div>
+          </div>
+
+          <!-- Email -->
+          <div class="form-group">
+              <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+                <div class="col-sm-10">
+                  <input type="email" name="email" class="form-control" id="inputEmail3" placeholder="Email">
+                </div>
+          </div>
+
+          <!-- Confirm Email -->
+          <div class="form-group">
+              <label for="inputEmail3" class="col-sm-2 control-label">Confirm Email</label>
+                <div class="col-sm-10">
+                  <input type="email" name="confirmemail" class="form-control"  placeholder="Confirm Email">
+                </div>
+          </div>
+
+          <!-- Date of Birth -->
+          <div class="form-group">
+              <label for="inputEmail3" class="col-sm-2 control-label">Date of Birth (MM/DD/YYYY)</label>
+                <div class="col-sm-10">
+                  <input type="date" name="dob" class="form-control" >
+                </div>
+          </div>
+      </div>
+
+      <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+          <button type="submit" class="btn btn-default">Sign Up</button> <!-- After alert success link to dashboard -->
+        </div>
+      </div>
+
+    	</form>
+	</div>
+</div>
+</body>
+
+<!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href=".navbar-wrapper">Back to top</a></p>
+        <p>&copy; 2015 Bail Your Heart, Inc. &middot; <a href="privacy-policy.html">Privacy Terms</a> &middot; <a href="#">Terms</a> &middot; <a href="site-map.html">Site Map</a></p>
+      </footer>
+
+		 </div>
+
+    <!-- For smooth scroll -->
+    <script src="Info files/smoothscroll.js"></script>
+
+</html>

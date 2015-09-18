@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--<link rel="icon" href="../../favicon.ico">-->
+    <link rel="icon" href="favicon.ico">
+	<!-- reset.css -->
+    <link rel="stylesheet" href="../reset.css">
+
+      <link rel="stylesheet" type='text/css' href='http://fonts.googleapis.com/css?family=Open+Sans:700,400,300'>
+
+    <title>CVD Free</title>
+
+    <!-- Bootstrap core CSS -->
+    <!--<link href="../../dist/css/bootstrap.min.css" rel="stylesheet">-->
+    <link href="bootstrapv5.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- Custom styles for this template -->
+    <link href="navbar-fixed-top_v2.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+    <link href="carousel_v2.css" rel="stylesheet">
+  </head>
+<!-- NAVBAR
+================================================== -->
+  <body>
+    <div class="navbar-wrapper">
+      <div class="container">
+
+        <!-- Fixed navbar -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand"><img src="introimages/cvdfreelogosmall.png" height="23px"></a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="about-us.html">About</a></li>
+                <li><a href="contact-us.html">Contact</a></li>
+                <li><a href="helpdesk-faq.html">Helpdesk/FAQ</a></li>
+                </li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="../navbar/">Login</a></li>
+                <li class="active"><a href="./">Sign-up <span class="sr-only">(current)</span></a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div>
+        </nav>
+
+      </div>
+    </div>
+
+
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img class="first-slide" src="introimages/20140128_121019.jpg" alt="First slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Let's be #cvdfree</h1>
+              <!--<p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>-->
+              <p id="fronttext">Together we can fight cardiovascular disease.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p> <p id="smalltext">Or, <a id="login" href="#Login">Login</a></p>
+              <p id="new"> New to the website? </p>
+                <p><a class="btn btn-lg btn-wide" href="#firstinfo" role="button"><b>Learn more</b></a></p>
+            </div>
+          </div>
+        </div>
+
+    </div><!-- /.carousel -->
+
+
+
+
+      <!-- START THE FEATURETTES -->
+      <div class="container content">
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+            <a id="firstinfo"></a><h2 class="featurette-heading">Did you know?</h2></a>
+
+            <span class="lead2"><b>Cardiovascular disease (CVD) is the world's leading killer,</b> accounting for 3 in 10 deaths worldwide.</span>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" src ="introimages/globe.png" alt="CVD is the world's leading killer">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+      <div class="row featurette">
+        <div class="col-md-7 col-md-push-5">
+        <p class="lead2">Unfortunately,<br /><b>1 in 6 Australians</b> have cardiovascular disease.</p>
+        </div>
+        <div class="col-md-5 col-md-pull-7">
+          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" src="introimages/infog1.png" alt="1 in 6 Australians have CVD">
+        </div>
+      </div>
+
+        <hr class="featurette-divider">
+        <div class="row featurette">
+        <div class="col-md-7">
+            <span class="lead2"><b>In 2011/12, CVD was responsible for 523,805 hospitalisations,</b> playing a secondary role in a further 800,000.</span>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" src ="introimages/health.png" alt="CVD is the world's leading killer">
+        </div>
+      </div>
+
+
+      <hr class="featurette-divider">
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Luckily, CVD is preventable.</h2>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" src="introimages/tick.png" alt="CVD is preventable">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+        <div class="row featurette">
+        <div class="col-md-7">
+            <span class="lead2"><b>Here's where we come in.</span>
+        </div>
+        <div class="col-md-5">
+        </div>
+      </div>
+
+
+
+<hr class="featurette-divider">
+      <!-- /END THE FEATURETTES -->
+
+
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2015 CVD Free, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a>
+      </footer>
+
+    </div>
+</div> <!-- /.container -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!--<script src="../../dist/js/bootstrap.min.js"></script>-->
+    <script src="bootstrap.min.js"></script>
+	<!-- For making the navbar disappear -->
+    <script src="navbar-disappear.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="../../assets/js/vendor/holder.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>

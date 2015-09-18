@@ -1,0 +1,13 @@
+/*body{
+  min-height: 200px;
+  paddint-top: 70px;
+}*/
+
+#navbar {
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+.navbar-header {
+  padding-left: 70px;
+}

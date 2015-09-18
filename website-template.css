@@ -1,0 +1,88 @@
+
+#container {
+  width: 1170px;
+  margin-top:50px;
+}
+
+
+marketing {
+  margin: 200px 100px;
+  width: 1170px;
+  height: 905px;
+  position: relative;
+}
+
+#header {
+  margin: 20px 0px 10px 0px;
+  font-size: 36px;
+  font-weight:700;
+  font-height: 69px;
+  text-align: center;
+  padding: 5px;
+}
+/*header for the BMI*/
+#header {
+  /*color: #20C9C1;*/
+  color: #B22222;
+}
+#header2{
+  color: #ffa328;
+}
+
+#section {
+  width: 620px;
+  float: left;
+}
+
+#section2 {
+  width: 340px;
+  float: right;
+}
+
+#section, #section2 {
+  font-size: 18px;
+  color: #000000;
+  font-weight: 400;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  color: #B22222;
+}
+
+.row ,h2.title {
+  font-size: 24px;
+}
+
+h2.heading {
+  font-family:inherit;
+  font-weight:700;
+  font-size: 18px;
+  /*color: #ffa328;*/
+  color: #B22222;
+}
+h2{
+  color: #ffa328;
+
+}
+h3{
+  color: #ffa328;
+}
+
+.form-horizontal {
+  color: #000000;
+}
+
+p.indent {
+  text-indent: 50px;
+}
+
+p#indentmore {
+  text-indent: 100px;
+}
+footer {
+  width: 1020px;
+  margin: 0px 89.5px 0px 89.5px;
+  clear: both;
+}

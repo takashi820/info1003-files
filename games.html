@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!--<link rel="icon" href="image/favicon.ico">-->
+
+
+    <!-- Reset CSS -->
+    <link href="reset.css" rel="stylesheet" />
+
+    <title>Games</title>
+
+    <!-- Bootstrap core CSS -->
+    <!--<link href="../../dist/css/bootstrap.min.css" rel="stylesheet">-->
+    <link href="Info files/bootstrapv5.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- Custom styles for this template -->
+    <link href="Info files/navbar-fixed-top_v2.css" rel="stylesheet">
+
+    <!-- Link to CSS file for content -->
+    <link href="website-template-info.css" rel="stylesheet">
+
+    <!-- Font Open Sans-->
+    <link rel="stylesheet" type='text/css' href='http://fonts.googleapis.com/css?family=Open+Sans:700,400,300'>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+    <link href="Info files/carousel_v2.css" rel="stylesheet">
+  </head>
+<!-- NAVBAR
+================================================== -->
+  <body>
+    <div class="navbar-wrapper">
+      <div class="container">
+
+        <!-- Fixed navbar -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="index.html"><img src="Info files/introimages/logo.png" height="23px"></a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li><a href="dashboard2.html">Home</a></li>
+                <li><a href="about-us.html">About</a></li>
+                <li><a href="contact-us2.html">Contact</a></li>
+                <li><a href="helpdesk-faq.html">Helpdesk/FAQ</a></li>
+              </ul>
+
+              <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Tools <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="bmi-calculator.html">BMI Calculator</a></li>
+                    <li><a href="calorie-counter.html">Calorie Calculator</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Interactive <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="quizzes.html">Quizzes</a></li>
+                    <li class="active"><a href="games.html">Games</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Info <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="diet-info.html">Diet Tips</a></li>
+                    <li><a href="heart-info.html">Heart Info</a></li>
+                    <li><a href="prevention-info.html">Prevention Info</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div>
+        </nav>
+
+      </div>
+    </div>
+
+
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+
+          <div id=container>
+            <div id=jumbotron>
+              <div id="header"> <!-- Header Title-->
+                <h1>Games</h1>
+              </div>
+
+              <div class=section> <!-- First Section (First Column), can add articles or more divs? -->
+                <p id="yus">
+                <script>
+                // Create the canvas
+                var canvas = document.createElement("canvas");
+                var ctx = canvas.getContext("2d");
+                canvas.width = 512;
+                canvas.height = 480;
+                document.body.appendChild(canvas);
+
+                // Background image
+                var bgReady = false;
+                var bgImage = new Image();
+                bgImage.onload = function () {
+                	bgReady = true;
+                };
+                bgImage.src = "image/background.png";
+
+                // Hero image
+                var heroReady = false;
+                var heroImage = new Image();
+                heroImage.onload = function () {
+                	heroReady = true;
+                };
+                heroImage.src = "image/player.png";
+
+                // Monster image
+                var fruitReady = false;
+                var fruitImage = new Image();
+                fruitImage.onload = function () {
+                	fruitReady = true;
+                };
+                fruitImage.src = "image/fruit.png";
+
+                // Game objects
+                var player = {
+                	speed: 256 // movement in pixels per second
+                };
+                var fruit = {};
+                var fruitsCaught = 0;
+
+                // Handle keyboard controls
+                var keysDown = {};
+
+                addEventListener("keydown", function (e) {
+                	keysDown[e.keyCode] = true;
+                }, false);
+
+                addEventListener("keyup", function (e) {
+                	delete keysDown[e.keyCode];
+                }, false);
+
+                // Reset the game when the player catches a fruit
+                var reset = function () {
+                	player.x = canvas.width / 2;
+                	player.y = canvas.height / 2;
+
+                	// Throw the fruit somewhere on the screen randomly
+                	fruit.x = 32 + (Math.random() * (canvas.width - 64));
+                	fruit.y = 32 + (Math.random() * (canvas.height - 64));
+                };
+
+                // Update game objects
+                var update = function (modifier) {
+                	0if (38 in keysDown) { // Player holding up
+                		player.y -= player.speed * modifier;
+                	}
+                	if (40 in keysDown) { // Player holding down
+                		player.y += player.speed * modifier;
+                	}
+                	if (37 in keysDown) { // Player holding left
+                		player.x -= player.speed * modifier;
+                	}
+                	if (39 in keysDown) { // Player holding right
+                		player.x += player.speed * modifier;
+                	}
+
+                	// Are they touching?
+                	if (
+                		player.x <= (fruit.x + 32)
+                		&& fruit.x <= (player.x + 32)
+                		&& player.y <= (fruit.y + 32)
+                		&& fruit.y <= (player.y + 32)
+                	) {
+                		++fruitsCaught;
+                		reset();
+                	}
+                };
+
+                // Draw everything
+                var render = function () {
+                	if (bgReady) {
+                		ctx.drawImage(bgImage, 0, 0);
+                	}
+
+                	if (heroReady) {
+                		ctx.drawImage(heroImage, player.x, player.y);
+                	}
+
+                	if (fruitReady) {
+                		ctx.drawImage(fruitImage, fruit.x, fruit.y);
+                	}
+
+                	// Score
+                	ctx.fillStyle = "rgb(250, 250, 250)";
+                	ctx.font = "24px Helvetica";
+                	ctx.textAlign = "left";
+                	ctx.textBaseline = "top";
+                	ctx.fillText("Bananas eaten: " + fruitsCaught, 32, 32);
+                };
+
+                // The main game loop
+                var main = function () {
+                	var now = Date.now();
+                	var delta = now - then;
+
+                	update(delta / 1000);
+                	render();
+
+                	then = now;
+
+                	// Request to do this again ASAP
+                	requestAnimationFrame(main);
+                };
+
+                // Cross-browser support for requestAnimationFrame
+                var w = window;
+                requestAnimationFrame = w.requestAnimationFrame || w.webkitRequestAnimationFrame || w.msRequestAnimationFrame || w.mozRequestAnimationFrame;
+
+                // Let's play this game!
+                var then = Date.now();
+                reset();
+                main();
+                </script>
+              </p>
+                <p>Based on http://www.lostdecadegames.com/demos/simple_canvas_game/ </p>
+              </div>
+            </div>
+
+            </div>
+
+          </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href=".navbar-wrapper">Back to top</a></p>
+        <p>&copy; 2015 Bail Your Heart, Inc. &middot; <a href="privacy-policy.html">Privacy Policy</a> &middot; <a href="#">Terms of Use</a>  &middot; <a href="site-map.html">Site Map</a></p>
+      </footer>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!--<script src="../../dist/js/bootstrap.min.js"></script>-->
+    <script src="homepage.files/bootstrap.min.js"></script>
+
+    <!-- For smooth scroll -->
+    <script src="Info files/smoothscroll.js"></script>
+
+    <!-- For making the navbar disappear -->
+    <script src="Info files/navbar-disappear.js"></script>
+
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="../../assets/js/vendor/holder.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
